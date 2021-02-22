@@ -266,16 +266,46 @@ code {
 }
 
 /* Footer */
+.footer {
+    padding-top: 2rem;
+}
+
 .footer .flex {
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+}
+
+.footer .flex * {
+    margin: 10px 0;
+}
+
+.footer nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+footer a {
+    transition: color 0.1s ease-in;
 }
 
 footer a:hover {
     color: var(--primary-color);
 }
 
+.footer .social {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 1.5rem 0;
+}
+
 .footer .social a {
-    margin: 0 10px;
+    margin: 0 15px;
+}
+
+.footer .copyright {
+    margin-top: 2rem;
+    word-spacing: 0.25em;
 }
 
 /* Animations */
@@ -389,12 +419,4 @@ footer a:hover {
         width: 300px;
     }
 
-    .footer .flex {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer .flex * {
-        margin-bottom: 15px;
-    }
 }
